@@ -1,0 +1,10 @@
+created_at: '2025-03-22T14:09:54.609789'
+deployments: []
+functions:
+- env_file: .env
+  memory: 128
+  name: example-function
+  path: ./src/handler.py
+  timeout: 30
+project: test-project
+provider: aws

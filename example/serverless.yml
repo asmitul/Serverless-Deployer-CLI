@@ -1,0 +1,15 @@
+project: sample-serverless-api
+provider: aws  # or vercel
+functions:
+  - name: example-function
+    path: ./src/handler.py
+    handler: handler.lambda_handler
+    memory: 128
+    timeout: 30
+    env_file: .env
+  - name: another-function
+    path: ./src/handler.py
+    handler: handler.handler
+    memory: 256
+    timeout: 60
+    env_file: .env 
